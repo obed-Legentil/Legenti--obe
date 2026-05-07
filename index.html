@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assistant Virtuel & Traducteur Multilingue</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --accent: #3498db;
+            --light: #f4f7f6;
+            --text: #333;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--light);
+        }
+
+        header {
+            background: white;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo { font-weight: bold; color: var(--primary); font-size: 1.5rem; }
+
+        .hero {
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            color: white;
+            padding: 80px 5%;
+            text-align: center;
+        }
+
+        .hero h1 { font-size: 2.5rem; margin-bottom: 20px; }
+
+        .container { padding: 50px 5%; }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .card:hover { transform: translateY(-10px); }
+
+        .card i { font-size: 2.5rem; color: var(--accent); margin-bottom: 20px; }
+
+        .languages {
+            background: white;
+            padding: 40px;
+            text-align: center;
+            margin: 40px 0;
+            border-radius: 10px;
+        }
+
+        .lang-tag {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            margin: 5px;
+            font-weight: bold;
+        }
+
+        .cta-btn {
+            background: var(--accent);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        footer { text-align: center; padding: 30px; background: var(--primary); color: white; }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Expert Virtuel</div>
+</header>
+
+<section class="hero">
+    <h1>Optimisez votre productivité sans frontières</h1>
+    <p>Assistant Virtuel • Support Client • Expert en Traduction</p>
+    <a href="#contact" class="cta-btn">Discutons de votre projet</a>
+</section>
+
+<div class="container">
+    <h2 style="text-align:center">Mes Services</h2>
+    <div class="services">
+        <div class="card">
+            <i class="fas fa-user-tie"></i>
+            <h3>Assistance Virtuelle</h3>
+            <p>Gestion d'agenda, organisation de voyages et support administratif pour libérer votre temps.</p>
+        </div>
+        <div class="card">
+            <i class="fas fa-headset"></i>
+            <h3>Support Client</h3>
+            <p>Gestion professionnelle de vos emails et chats pour une satisfaction client irréprochable.</p>
+        </div>
+        <div class="card">
+            <i class="fas fa-language"></i>
+            <h3>Traduction</h3>
+            <p>Traduction précise de documents techniques, juridiques ou marketing.</p>
+            <div style="margin-top:15px">
+                <span class="lang-tag">FR</span>
+                <span class="lang-tag">ANG</span>
+                <span class="lang-tag">ESP</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section id="contact" style="background-color: #ecf0f1; padding: 60px 5%; text-align: center;">
+    <h2>Prêt à collaborer ?</h2>
+    <p>Contactez-moi pour un devis gratuit et personnalisé.</p>
+    <p><strong>Email :</strong> contact@votre-domaine.com</p>
+</section>
+
+<footer>
+    <p>&copy; 2026 - Expert Assistant Virtuel. Tous droits réservés.</p>
+</footer>
+
+</body>
+  </html>
