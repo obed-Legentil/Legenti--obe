@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -19,8 +20,6 @@
         .btn { display: flex; align-items: center; justify-content: center; gap: 10px; text-decoration: none; font-weight: bold; padding: 18px; border-radius: 50px; margin: 15px auto; width: 100%; max-width: 300px; }
         .btn-wa { background: #25D366; color: white; }
         .btn-mail { border: 2px solid var(--gold); color: var(--gold); }
-        
-        /* Style pour la politique de confidentialité */
         .footer-links { margin-top: 50px; padding: 20px; font-size: 0.8rem; opacity: 0.6; }
         .privacy-link { color: var(--gold); text-decoration: underline; cursor: pointer; }
         #privacy-modal { display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); overflow: auto; }
@@ -29,48 +28,40 @@
     </style>
 </head>
 <body>
-
     <header>
         <div class="logo-box">
-            <img src="1000003135.jpg" alt="Logo Ahissou Obed" class="image-du-logo">
+            <img src="1000003135.jpg" alt="Logo Ahissou Obed" class="logo-img">
         </div>
     </header>
-
     <section class="hero">
         <h1>Ahissou Obed</h1>
         <p style="font-size: 1.1rem; max-width: 600px; margin: 20px auto; color: #bbbbbb; line-height: 1.8;">
-    Expert en solutions digitales, j'accompagne les professionnels et les entreprises dans leur gestion administrative, leur communication client et leurs besoins linguistiques avec rigueur et discrétion.
-</p>
-
+            Expert en solutions digitales, j'accompagne les professionnels et les entreprises dans leur gestion administrative, leur communication client et leurs besoins linguistiques avec rigueur et discrétion.
+        </p>
         <p>Confidentialité • Efficacité • Professionnalisme</p>
     </section>
-
     <div class="services-container">
-        <div class="card"><i class="fas fa-user-tie"></i><h3>Assistant Virtuel</h3><p>Gestion administrative et organisation.</p></div>
-        <div class="card"><i class="fas fa-language"></i><h3>Traduction</h3><p>Français • Anglais • Espagnol.</p></div>
-        <div class="card"><i class="fas fa-headset"></i><h3>Support Client</h3><p>Relation client irréprochable.</p></div>
+        <div class="card"><i class="fas fa-user-tie"></i><h3>Assistant Virtuel</h3></div>
+        <div class="card"><i class="fas fa-language"></i><h3>Traduction</h3></div>
+        <div class="card"><i class="fas fa-headset"></i><h3>Support Client</h3></div>
     </div>
-
     <section style="padding: 40px 20px;">
-        <a href="https://wa.me/22967681613" class="btn btn-wa"><i class="fab fa-whatsapp"></i> WhatsApp Direct</a>
-        <a href="mailto:legentil.ob@gmail.com" class="btn btn-mail"><i class="fas fa-envelope"></i> Envoyer un Email</a>
+        <a href="https://wa.me/22967681613" class="btn btn-wa"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+        <a href="mailto:legentil.ob@gmail.com" class="btn btn-mail"><i class="fas fa-envelope"></i> Email</a>
     </section>
-
     <div class="footer-links">
         &copy; 2026 AHISSOU OBED <br><br>
         <span class="privacy-link" onclick="document.getElementById('privacy-modal').style.display='block'">Politique de Confidentialité</span>
     </div>
-
     <div id="privacy-modal">
         <div class="modal-content">
             <span class="close-btn" onclick="document.getElementById('privacy-modal').style.display='none'">&times;</span>
             <h2 style="color:var(--gold)">Engagement de Confidentialité</h2>
-            <p><strong>Protection des données :</strong> Toutes les informations et documents partagés dans le cadre de mes services sont traités avec la plus stricte confidentialité.</p>
-            <p><strong>Collecte limitée :</strong> Je ne collecte que les informations nécessaires à la réalisation de vos projets (Nom, Email, documents de travail).</p>
-            <p><strong>Sécurité :</strong> Aucune donnée n'est partagée avec des tiers sans votre accord explicite. Vos fichiers sont supprimés après livraison sur simple demande.</p>
+            <p><strong>Protection des données :</strong> Toutes les informations et documents partagés sont traités avec la plus stricte confidentialité.</p>
+            <p><strong>Collecte :</strong> Je ne collecte que le nécessaire (Nom, Email) pour la réalisation de vos projets.</p>
+            <p><strong>Engagement :</strong> Aucune donnée n'est partagée avec des tiers sans votre accord explicite.</p>
         </div>
     </div>
-
 </body>
 </html>
 
