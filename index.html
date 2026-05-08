@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -9,41 +8,24 @@
     <style>
         :root { --gold: #D4AF37; --black: #080808; --gray: #121212; --white: #ffffff; }
         body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; background-color: var(--black); color: var(--white); text-align: center; }
-        
-        /* Header & Logo */
         header { padding: 40px 20px; }
-        .logo-box { 
-            display: inline-block;
-            padding: 10px;
-            border: 2px solid var(--gold);
-            border-radius: 15px;
-            box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
-        }
+        .logo-box { display: inline-block; padding: 10px; border: 2px solid var(--gold); border-radius: 15px; box-shadow: 0 0 20px rgba(212, 175, 55, 0.2); }
         .logo-img { max-width: 250px; height: auto; display: block; }
-
-        /* Hero Section */
-        .hero { padding: 60px 20px; background: linear-gradient(180deg, var(--black) 0%, var(--gray) 100%); }
-        .hero h1 { font-size: 2.2rem; color: var(--gold); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 10px; }
-        .hero p { font-size: 1.1rem; opacity: 0.8; margin-bottom: 30px; }
-
-        /* Services Card */
+        .hero { padding: 40px 20px; }
+        .hero h1 { font-size: 2.2rem; color: var(--gold); letter-spacing: 2px; text-transform: uppercase; }
         .services-container { display: flex; flex-direction: column; gap: 20px; padding: 20px; max-width: 500px; margin: auto; }
-        .card { background: var(--gray); padding: 25px; border-radius: 15px; border: 1px solid rgba(212, 175, 55, 0.1); transition: 0.3s; }
+        .card { background: var(--gray); padding: 25px; border-radius: 15px; border: 1px solid rgba(212, 175, 55, 0.1); }
         .card i { font-size: 2rem; color: var(--gold); margin-bottom: 15px; display: block; }
-        .card h3 { margin-bottom: 5px; font-size: 1.3rem; }
-
-        /* Contact Buttons */
-        .cta-section { padding: 50px 20px; }
-        .btn { 
-            display: flex; align-items: center; justify-content: center; gap: 10px;
-            text-decoration: none; font-weight: bold; padding: 18px; border-radius: 50px; 
-            margin: 15px auto; width: 100%; max-width: 300px; transition: 0.3s;
-        }
+        .btn { display: flex; align-items: center; justify-content: center; gap: 10px; text-decoration: none; font-weight: bold; padding: 18px; border-radius: 50px; margin: 15px auto; width: 100%; max-width: 300px; }
         .btn-wa { background: #25D366; color: white; }
         .btn-mail { border: 2px solid var(--gold); color: var(--gold); }
-        .btn:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
-
-        footer { padding: 30px; font-size: 0.8rem; opacity: 0.4; }
+        
+        /* Style pour la politique de confidentialité */
+        .footer-links { margin-top: 50px; padding: 20px; font-size: 0.8rem; opacity: 0.6; }
+        .privacy-link { color: var(--gold); text-decoration: underline; cursor: pointer; }
+        #privacy-modal { display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); overflow: auto; }
+        .modal-content { background: var(--gray); margin: 15% auto; padding: 30px; width: 85%; max-width: 600px; border-radius: 15px; text-align: left; border: 1px solid var(--gold); position: relative; }
+        .close-btn { color: var(--gold); position: absolute; right: 20px; top: 10px; font-size: 28px; font-weight: bold; cursor: pointer; }
     </style>
 </head>
 <body>
@@ -56,41 +38,36 @@
 
     <section class="hero">
         <h1>Ahissou Obed</h1>
-        <p>L'alliance de l'efficacité et de la confidentialité.</p>
+        <p>Confidentialité • Efficacité • Professionnalisme</p>
     </section>
 
     <div class="services-container">
-        <div class="card">
-            <i class="fas fa-user-tie"></i>
-            <h3>Assistant Virtuel</h3>
-            <p>Gestion administrative et organisation de haut niveau.</p>
-        </div>
-        <div class="card">
-            <i class="fas fa-language"></i>
-            <h3>Traduction Expert</h3>
-            <p>Français • Anglais • Espagnol avec précision.</p>
-        </div>
-        <div class="card">
-            <i class="fas fa-headset"></i>
-            <h3>Support Client</h3>
-            <p>Une relation client professionnelle et réactive.</p>
+        <div class="card"><i class="fas fa-user-tie"></i><h3>Assistant Virtuel</h3><p>Gestion administrative et organisation.</p></div>
+        <div class="card"><i class="fas fa-language"></i><h3>Traduction</h3><p>Français • Anglais • Espagnol.</p></div>
+        <div class="card"><i class="fas fa-headset"></i><h3>Support Client</h3><p>Relation client irréprochable.</p></div>
+    </div>
+
+    <section style="padding: 40px 20px;">
+        <a href="https://wa.me/22967681613" class="btn btn-wa"><i class="fab fa-whatsapp"></i> WhatsApp Direct</a>
+        <a href="mailto:legentil.ob@gmail.com" class="btn btn-mail"><i class="fas fa-envelope"></i> Envoyer un Email</a>
+    </section>
+
+    <div class="footer-links">
+        &copy; 2026 AHISSOU OBED <br><br>
+        <span class="privacy-link" onclick="document.getElementById('privacy-modal').style.display='block'">Politique de Confidentialité</span>
+    </div>
+
+    <div id="privacy-modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="document.getElementById('privacy-modal').style.display='none'">&times;</span>
+            <h2 style="color:var(--gold)">Engagement de Confidentialité</h2>
+            <p><strong>Protection des données :</strong> Toutes les informations et documents partagés dans le cadre de mes services sont traités avec la plus stricte confidentialité.</p>
+            <p><strong>Collecte limitée :</strong> Je ne collecte que les informations nécessaires à la réalisation de vos projets (Nom, Email, documents de travail).</p>
+            <p><strong>Sécurité :</strong> Aucune donnée n'est partagée avec des tiers sans votre accord explicite. Vos fichiers sont supprimés après livraison sur simple demande.</p>
         </div>
     </div>
 
-    <section class="cta-section">
-        <h2>Prêt à collaborer ?</h2>
-        <a href="https://wa.me/22967681613" class="btn btn-wa">
-            <i class="fab fa-whatsapp"></i> Contact WhatsApp
-        </a>
-        <a href="mailto:legentil.ob@gmail.com" class="btn btn-mail">
-            <i class="fas fa-envelope"></i> Envoyer un Email
-        </a>
-    </section>
-
-    <footer>
-        &copy; 2026 AHISSOU OBED • SERVICES DIGITAUX
-    </footer>
-
 </body>
 </html>
+
 
