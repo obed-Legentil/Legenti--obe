@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Expert Virtuel | Obed</title>
+    <title>Obed Legentil | Expert Virtuel & Traducteur</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
         :root {
@@ -24,9 +24,9 @@
 
         header {
             background: var(--white);
-            padding: 1.2rem 5%;
+            padding: 1rem 5%;
             display: flex;
-            justify-content: space-between;
+            justify-content: center; /* Centre le logo sur mobile */
             align-items: center;
             box-shadow: 0 2px 10px rgba(0,0,0,0.05);
             position: sticky;
@@ -34,7 +34,10 @@
             z-index: 1000;
         }
 
-        .logo { font-weight: bold; color: var(--primary); font-size: 1.5rem; text-transform: uppercase; letter-spacing: 1px; }
+        .logo-img {
+            max-height: 50px; /* Ajuste la hauteur de ton logo */
+            width: auto;
+        }
 
         .hero {
             background: linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 123, 255, 0.8)), url('https://images.unsplash.com/photo-1484417894907-623942c8ee29?auto=format&fit=crop&q=80&w=2000');
@@ -107,18 +110,19 @@
 
         @media (max-width: 768px) {
             .hero h1 { font-size: 2rem; }
+            header { justify-content: center; } /* Logo centré sur mobile */
         }
     </style>
 </head>
 <body>
 
 <header>
-    <div class="logo">Expert Virtuel</div>
+    <img src="logo.png" alt="Logo Obed Legentil" class="logo-img">
 </header>
 
 <section class="hero">
     <h1>Votre allié quotidien pour une productivité sans frontières</h1>
-    <p>Solutions d'assistance et de traduction multilingue</p>
+    <p>Solutions d'assistance et de traduction multilingue (FR|EN|ES)</p>
     <a href="mailto:legentil.ob@gmail.com" class="cta-btn">Démarrer un projet</a>
 </section>
 
@@ -162,3 +166,5 @@
 
 </body>
 </html>
+
+
