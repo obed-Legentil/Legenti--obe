@@ -1,180 +1,95 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ahissou Obed | Solutions Digitales Premium</title>
+    <title>Ahissou Obed | Expert Digital Premium</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
-        :root {
-            --gold: #D4AF37;
-            --dark: #0a0a0a;
-            --white: #ffffff;
-            --gray: #1a1a1a;
-        }
-
-        body {
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            margin: 0;
-            background-color: var(--dark);
-            color: var(--white);
-            line-height: 1.6;
-        }
-
-        header {
-            padding: 40px 20px;
-            text-align: center;
-            background: var(--dar
-
-                            
-        }logo.jpg
-
-        .hero {
-            padding: 60px 20px;
-            background: linear-gradient(to bottom, var(--dark), var(--gray));
-        }
-
-        .hero h1 {
-            font-size: 2.5rem;
-            color: var(--gold);
-            margin-bottom: 10px;
-            letter-spacing: 2px;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            opacity: 0.8;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-            padding: 50px 5%;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .service-card {
-            background: var(--gray);
-            padding: 40px;
-            border-radius: 20px;
-            border: 1px solid rgba(212, 175, 55, 0.1);
-            transition: transform 0.3s ease, border 0.3s ease;
-        }
-
-        .service-card:hover {
-            transform: translateY(-10px);
-            border: 1px solid var(--gold);
-        }
-
-        .service-card i {
-            font-size: 3rem;
-            color: var(--gold);
-            margin-bottom: 20px;
-        }
-
-        .service-card h3 {
-            font-size: 1.5rem;
-            margin-bottom: 15px;
-        }
-
-        .contact-area {
-            padding: 80px 20px;
-            background: var(--gray);
-            text-align: center;
-        }
-
-        .btn-group {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 30px;
-        }
-
-        .btn {
-            padding: 18px 35px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: bold;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            transition: all 0.3s ease;
-        }
-
-        .btn-whatsapp {
-            background: #25D366;
-            color: white;
-        }
-
-        .btn-email {
-            background: transparent;
-            color: var(--gold);
+        :root { --gold: #D4AF37; --black: #080808; --gray: #121212; --white: #ffffff; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; background-color: var(--black); color: var(--white); text-align: center; }
+        
+        /* Header & Logo */
+        header { padding: 40px 20px; }
+        .logo-box { 
+            display: inline-block;
+            padding: 10px;
             border: 2px solid var(--gold);
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
         }
+        .logo-img { max-width: 250px; height: auto; display: block; }
 
-        .btn:hover {
-            opacity: 0.9;
-            transform: scale(1.05);
-        }
+        /* Hero Section */
+        .hero { padding: 60px 20px; background: linear-gradient(180deg, var(--black) 0%, var(--gray) 100%); }
+        .hero h1 { font-size: 2.2rem; color: var(--gold); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 10px; }
+        .hero p { font-size: 1.1rem; opacity: 0.8; margin-bottom: 30px; }
 
-        footer {
-            padding: 40px;
-            font-size: 0.9rem;
-            opacity: 0.5;
-            text-align: center;
+        /* Services Card */
+        .services-container { display: flex; flex-direction: column; gap: 20px; padding: 20px; max-width: 500px; margin: auto; }
+        .card { background: var(--gray); padding: 25px; border-radius: 15px; border: 1px solid rgba(212, 175, 55, 0.1); transition: 0.3s; }
+        .card i { font-size: 2rem; color: var(--gold); margin-bottom: 15px; display: block; }
+        .card h3 { margin-bottom: 5px; font-size: 1.3rem; }
+
+        /* Contact Buttons */
+        .cta-section { padding: 50px 20px; }
+        .btn { 
+            display: flex; align-items: center; justify-content: center; gap: 10px;
+            text-decoration: none; font-weight: bold; padding: 18px; border-radius: 50px; 
+            margin: 15px auto; width: 100%; max-width: 300px; transition: 0.3s;
         }
+        .btn-wa { background: #25D366; color: white; }
+        .btn-mail { border: 2px solid var(--gold); color: var(--gold); }
+        .btn:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
+
+        footer { padding: 30px; font-size: 0.8rem; opacity: 0.4; }
     </style>
 </head>
 <body>
 
-<header>
-    <img src="1000003135.jpg" alt="Ahissou Obed Logo" class="logo-img">
-</header>
+    <header>
+        <div class="logo-box">
+            <img src="1000003135.jpg" alt="Logo Ahissou Obed" class="logo-img">
+        </div>
+    </header>
 
-<section class="hero">
-    <h1>L'EXCELLENCE DIGITALE</h1>
-    <p>Solutions sur mesure en assistance virtuelle, support client et traduction multilingue.</p>
-</section>
+    <section class="hero">
+        <h1>Ahissou Obed</h1>
+        <p>L'alliance de l'efficacité et de la confidentialité.</p>
+    </section>
 
-<div class="services-grid">
-    <div class="service-card">
-        <i class="fas fa-user-check"></i>
-        <h3>Assistant Virtuel</h3>
-        <p>Optimisation de votre emploi du temps et gestion administrative de haut niveau.</p>
+    <div class="services-container">
+        <div class="card">
+            <i class="fas fa-user-tie"></i>
+            <h3>Assistant Virtuel</h3>
+            <p>Gestion administrative et organisation de haut niveau.</p>
+        </div>
+        <div class="card">
+            <i class="fas fa-language"></i>
+            <h3>Traduction Expert</h3>
+            <p>Français • Anglais • Espagnol avec précision.</p>
+        </div>
+        <div class="card">
+            <i class="fas fa-headset"></i>
+            <h3>Support Client</h3>
+            <p>Une relation client professionnelle et réactive.</p>
+        </div>
     </div>
-    <div class="service-card">
-        <i class="fas fa-headset"></i>
-        <h3>Support Client</h3>
-        <p>Une gestion de relation client irréprochable pour fidéliser votre audience.</p>
-    </div>
-    <div class="service-card">
-        <i class="fas fa-globe-americas"></i>
-        <h3>Traduction</h3>
-        <p>Français • Anglais • Espagnol. Une précision linguistique pour vos projets globaux.</p>
-    </div>
-</div>
 
-<section class="contact-area">
-    <h2>Prêt à démarrer ?</h2>
-    <p>Contactez-moi directement pour discuter de vos besoins.</p>
-    <div class="btn-group">
-        <a href="https://wa.me/22967681613" class="btn btn-whatsapp">
-            <i class="fab fa-whatsapp"></i> WhatsApp
+    <section class="cta-section">
+        <h2>Prêt à collaborer ?</h2>
+        <a href="https://wa.me/22967681613" class="btn btn-wa">
+            <i class="fab fa-whatsapp"></i> Contact WhatsApp
         </a>
-        <a href="mailto:legentil.ob@gmail.com" class="btn btn-email">
-            <i class="fas fa-envelope"></i> legentil.ob@gmail.com
+        <a href="mailto:legentil.ob@gmail.com" class="btn btn-mail">
+            <i class="fas fa-envelope"></i> Envoyer un Email
         </a>
-    </div>
-</section>
+    </section>
 
-<footer>
-    &copy; 2026 Ahissou Obed. Tous droits réservés.
-</footer>
+    <footer>
+        &copy; 2026 AHISSOU OBED • SERVICES DIGITAUX
+    </footer>
 
 </body>
 </html>
