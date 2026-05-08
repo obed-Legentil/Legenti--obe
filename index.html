@@ -8,16 +8,19 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
         :root { --gold: #D4AF37; --black: #080808; --gray: #121212; --white: #ffffff; }
-        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; background-color: var(--black); color: var(--white); text-align: center; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; background-color: var(--black); color: var(--white); text-align: center; line-height: 1.6; }
         header { padding: 40px 20px; }
         .logo-box { display: inline-block; padding: 10px; border: 2px solid var(--gold); border-radius: 15px; box-shadow: 0 0 20px rgba(212, 175, 55, 0.2); }
         .logo-img { max-width: 250px; height: auto; display: block; }
         .hero { padding: 40px 20px; }
-        .hero h1 { font-size: 2.2rem; color: var(--gold); letter-spacing: 2px; text-transform: uppercase; }
+        .hero h1 { font-size: 2.2rem; color: var(--gold); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 10px; }
         .services-container { display: flex; flex-direction: column; gap: 20px; padding: 20px; max-width: 500px; margin: auto; }
         .card { background: var(--gray); padding: 25px; border-radius: 15px; border: 1px solid rgba(212, 175, 55, 0.1); }
         .card i { font-size: 2rem; color: var(--gold); margin-bottom: 15px; display: block; }
-        .btn { display: flex; align-items: center; justify-content: center; gap: 10px; text-decoration: none; font-weight: bold; padding: 18px; border-radius: 50px; margin: 15px auto; width: 100%; max-width: 300px; }
+        .section-title { color: var(--gold); margin-top: 40px; text-transform: uppercase; letter-spacing: 1px; }
+        .content-box { max-width: 600px; margin: 20px auto; padding: 20px; text-align: left; background: var(--gray); border-radius: 15px; }
+        .exp-item { border-left: 2px solid var(--gold); padding-left: 15px; margin-bottom: 20px; }
+        .btn { display: flex; align-items: center; justify-content: center; gap: 10px; text-decoration: none; font-weight: bold; padding: 18px; border-radius: 50px; margin: 15px auto; width: 100%; max-width: 300px; transition: 0.3s; }
         .btn-wa { background: #25D366; color: white; }
         .btn-mail { border: 2px solid var(--gold); color: var(--gold); }
         .footer-links { margin-top: 50px; padding: 20px; font-size: 0.8rem; opacity: 0.6; }
@@ -30,36 +33,56 @@
 <body>
     <header>
         <div class="logo-box">
-            <img src="1000003135.jpg" alt="Logo Ahissou Obed" class="image>
+            <img src="1000003135.jpg" alt="Logo Ahissou Obed" class="logo-img">
         </div>
     </header>
+
     <section class="hero">
         <h1>Ahissou Obed</h1>
-        <p style="font-size: 1.1rem; max-width: 600px; margin: 20px auto; color: #bbbbbb; line-height: 1.8;">
-            Expert en solutions digitales, j'accompagne les professionnels et les entreprises dans leur gestion administrative, leur communication client et leurs besoins linguistiques avec rigueur et discrétion.
+        <p style="font-size: 1.1rem; max-width: 600px; margin: 20px auto; color: #bbbbbb;">
+            Expert en solutions digitales, j'accompagne les professionnels dans leur gestion administrative et leurs besoins linguistiques.
         </p>
-        <p>Confidentialité • Efficacité • Professionnalisme</p>
     </section>
+
+    <h2 class="section-title">Mes Services</h2>
     <div class="services-container">
         <div class="card"><i class="fas fa-user-tie"></i><h3>Assistant Virtuel</h3></div>
         <div class="card"><i class="fas fa-language"></i><h3>Traduction</h3></div>
         <div class="card"><i class="fas fa-headset"></i><h3>Support Client</h3></div>
     </div>
+
+    <h2 class="section-title">À propos du CEO</h2>
+    <div class="content-box">
+        <p><strong>Ahissou Obed</strong> est un expert digital dédié à l'excellence opérationnelle. Sa mission est d'offrir une structure rigoureuse et une communication multilingue fluide aux entreprises exigeantes.</p>
+    </div>
+
+    <h2 class="section-title">Expérience Client</h2>
+    <div class="content-box">
+        <div class="exp-item">
+            <strong style="color: var(--gold);">Écoute & Analyse</strong>
+            <p style="font-size: 0.9rem; margin: 5px 0 0 0;">Une approche personnalisée pour chaque projet dès le premier contact.</p>
+        </div>
+        <div class="exp-item">
+            <strong style="color: var(--gold);">Réactivité Totale</strong>
+            <p style="font-size: 0.9rem; margin: 5px 0 0 0;">Engagement strict sur les délais et suivi en temps réel de vos tâches.</p>
+        </div>
+    </div>
+
     <section style="padding: 40px 20px;">
-        <a href="https://wa.me/22967681613" class="btn btn-wa"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-        <a href="mailto:legentil.ob@gmail.com" class="btn btn-mail"><i class="fas fa-envelope"></i> Email</a>
+        <a href="https://wa.me/22967681613" class="btn btn-wa"><i class="fab fa-whatsapp"></i> WhatsApp Direct</a>
+        <a href="mailto:legentil.ob@gmail.com" class="btn btn-mail"><i class="fas fa-envelope"></i> Envoyer un Email</a>
     </section>
+
     <div class="footer-links">
         &copy; 2026 AHISSOU OBED <br><br>
         <span class="privacy-link" onclick="document.getElementById('privacy-modal').style.display='block'">Politique de Confidentialité</span>
     </div>
+
     <div id="privacy-modal">
         <div class="modal-content">
             <span class="close-btn" onclick="document.getElementById('privacy-modal').style.display='none'">&times;</span>
             <h2 style="color:var(--gold)">Engagement de Confidentialité</h2>
-            <p><strong>Protection des données :</strong> Toutes les informations et documents partagés sont traités avec la plus stricte confidentialité.</p>
-            <p><strong>Collecte :</strong> Je ne collecte que le nécessaire (Nom, Email) pour la réalisation de vos projets.</p>
-            <p><strong>Engagement :</strong> Aucune donnée n'est partagée avec des tiers sans votre accord explicite.</p>
+            <p>Toutes les données partagées sont traitées avec le plus strict secret professionnel.</p>
         </div>
     </div>
 </body>
