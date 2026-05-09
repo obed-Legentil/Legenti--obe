@@ -4,26 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ahissou Obed | CEO Expert Digital</title>
+    <title>Ahissou Obed | Expert Digital & CEO</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
         :root { --gold: #D4AF37; --black: #080808; --gray: #121212; --white: #ffffff; }
         body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; background-color: var(--black); color: var(--white); text-align: center; line-height: 1.6; }
         header { padding: 40px 20px; }
         .logo-box { display: inline-block; padding: 10px; border: 2px solid var(--gold); border-radius: 15px; }
-        .logo-img { max-width: 200px; height: auto; display: block; }
-        .hero { padding: 30px 20px; }
-        .hero h1 { font-size: 2.2rem; color: var(--gold); text-transform: uppercase; margin-bottom: 10px; }
-        .section-title { color: var(--gold); margin-top: 40px; text-transform: uppercase; font-size: 1.2rem; letter-spacing: 2px; }
-        .content-box { max-width: 600px; margin: 20px auto; padding: 25px; text-align: left; background: var(--gray); border-radius: 20px; border: 1px solid rgba(212, 175, 55, 0.1); }
-        .services-grid { display: flex; flex-direction: column; gap: 15px; padding: 20px; max-width: 500px; margin: auto; }
-        .card { background: var(--gray); padding: 20px; border-radius: 15px; border-left: 4px solid var(--gold); }
-        .card i { color: var(--gold); font-size: 1.5rem; margin-bottom: 10px; }
-        .profile-img { width: 140px; height: 140px; border-radius: 50%; border: 3px solid var(--gold); margin: 0 auto 20px auto; display: block; object-fit: cover; }
-        .btn { display: flex; align-items: center; justify-content: center; gap: 10px; text-decoration: none; font-weight: bold; padding: 18px; border-radius: 50px; margin: 15px auto; width: 85%; max-width: 300px; }
+        .logo-img { max-width: 180px; height: auto; display: block; }
+        .section-title { color: var(--gold); margin-top: 50px; text-transform: uppercase; font-size: 1.3rem; letter-spacing: 3px; border-bottom: 1px solid rgba(212, 175, 55, 0.2); display: inline-block; padding-bottom: 5px; }
+        .content-box { max-width: 650px; margin: 25px auto; padding: 30px; text-align: left; background: var(--gray); border-radius: 20px; border: 1px solid rgba(212, 175, 55, 0.1); }
+        .profile-img { width: 150px; height: 150px; border-radius: 50%; border: 3px solid var(--gold); margin: 0 auto 20px auto; display: block; object-fit: cover; box-shadow: 0 10px 20px rgba(0,0,0,0.5); }
+        
+        /* Style Témoignages */
+        .testimonial-grid { display: flex; flex-direction: column; gap: 20px; }
+        .testimonial { padding: 20px; border-radius: 15px; background: rgba(255,255,255,0.02); border-left: 4px solid var(--gold); position: relative; }
+        .testimonial i { color: rgba(212, 175, 55, 0.3); position: absolute; right: 20px; top: 20px; font-size: 1.5rem; }
+        .quote { font-style: italic; font-size: 0.95rem; display: block; margin-bottom: 10px; }
+        .client-info { color: var(--gold); font-weight: bold; font-size: 0.85rem; text-transform: uppercase; }
+
+        /* Boutons */
+        .btn-container { padding: 30px 20px; }
+        .btn { display: flex; align-items: center; justify-content: center; gap: 10px; text-decoration: none; font-weight: bold; padding: 18px; border-radius: 50px; margin: 15px auto; width: 90%; max-width: 320px; transition: 0.3s; }
         .btn-wa { background: #25D366; color: white; }
         .btn-mail { border: 2px solid var(--gold); color: var(--gold); }
-        .footer { margin-top: 50px; padding: 30px; font-size: 0.8rem; opacity: 0.6; }
+
+        /* Modal Politique */
+        #privacy-modal { display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.95); overflow-y: auto; padding-top: 50px; }
+        .modal-content { background: var(--gray); margin: 5% auto; padding: 40px; border: 1px solid var(--gold); width: 85%; max-width: 800px; border-radius: 25px; text-align: left; }
+        .modal-content h3 { color: var(--gold); border-bottom: 1px solid var(--gold); padding-bottom: 10px; margin-top: 25px; }
+        .close-btn { color: var(--gold); float: right; font-size: 35px; cursor: pointer; line-height: 20px; }
     </style>
 </head>
 <body>
@@ -34,33 +44,87 @@
         </div>
     </header>
 
-    <section class="hero">
-        <h1>Ahissou Obed</h1>
-        <p style="color: #bbb;">Expert en solutions digitales & CEO</p>
-    </section>
-
-    <h2 class="section-title">À propos du CEO</h2>
+    <h2 class="section-title">Leadership & Vision</h2>
     <div class="content-box" style="text-align: center;">
         <img src="profil-ceo.jpg" alt="Ahissou Obed" class="profile-img">
-        <p><strong>Ahissou Obed</strong> est un expert digital dédié à l'excellence opérationnelle. Sa mission est d'offrir une structure rigoureuse et une communication fluide aux entreprises exigeantes.</p>
+        <p style="font-size: 1.1rem; color: var(--gold);"><strong>Ahissou Obed</strong></p>
+        <p>Expert en solutions digitales, j'accompagne les leaders et les entreprises vers une efficacité optimale grâce à une assistance de haut niveau et une maîtrise linguistique sans faille.</p>
     </div>
 
-    <h2 class="section-title">Mes Services</h2>
-    <div class="services-grid">
-        <div class="card"><i class="fas fa-user-tie"></i><h3>Assistant Virtuel</h3></div>
-        <div class="card"><i class="fas fa-language"></i><h3>Traduction</h3></div>
-        <div class="card"><i class="fas fa-headset"></i><h3>Support Client</h3></div>
+    <h2 class="section-title">Retours d'Expérience</h2>
+    <div class="content-box">
+        <div class="testimonial-grid">
+            <div class="testimonial">
+                <i class="fas fa-quote-right"></i>
+                <span class="quote">"Une rigueur exemplaire. Mon agenda et mes communications sont désormais gérés avec une précision chirurgicale."</span>
+                <span class="client-info">Jean-Luc M. | Dirigeant de Start-up</span>
+            </div>
+            <div class="testimonial">
+                <i class="fas fa-quote-right"></i>
+                <span class="quote">"La qualité des traductions est impressionnante. Il saisit parfaitement les nuances techniques de mon secteur."</span>
+                <span class="client-info">Sarah T. | Consultante RH Internationale</span>
+            </div>
+            <div class="testimonial">
+                <i class="fas fa-quote-right"></i>
+                <span class="quote">"Efficacité et discrétion. Un partenaire de confiance pour la gestion de données sensibles."</span>
+                <span class="client-info">Marc A. | Cabinet Juridique</span>
+            </div>
+            <div class="testimonial">
+                <i class="fas fa-quote-right"></i>
+                <span class="quote">"Réactivité incroyable. Il a su réorganiser mon support client en un temps record."</span>
+                <span class="client-info">Elena G. | E-commerçante</span>
+            </div>
+            <div class="testimonial">
+                <i class="fas fa-quote-right"></i>
+                <span class="quote">"Le professionnalisme incarné. Ahissou apporte une réelle valeur ajoutée à chaque mission."</span>
+                <span class="client-info">Patrice K. | Responsable Logistique</span>
+            </div>
+        </div>
     </div>
 
-    <h2 class="section-title">Contact Direct</h2>
-    <section style="padding: 20px;">
-        <a href="https://wa.me/22967681613" class="btn btn-wa"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-        <a href="mailto:legentil.ob@gmail.com" class="btn btn-mail"><i class="fas fa-envelope"></i> Email</a>
-    </section>
+    <h2 class="section-title">Coordonnées</h2>
+    <div class="btn-container">
+        <a href="https://wa.me/22967681613" class="btn btn-wa"><i class="fab fa-whatsapp"></i> Contact WhatsApp</a>
+        <a href="mailto:legentil.ob@gmail.com" class="btn btn-mail"><i class="fas fa-envelope"></i> Contact Email</a>
+    </div>
 
-    <div class="footer">
-        &copy; 2026 AHISSOU OBED <br>
-        Expert Digital Premium
+    <footer style="padding: 40px 20px; opacity: 0.7; font-size: 0.8rem;">
+        &copy; 2026 AHISSOU OBED - Tous droits réservés.<br><br>
+        <a href="javascript:void(0)" onclick="document.getElementById('privacy-modal').style.display='block'" style="color: var(--gold); text-decoration: underline;">Lire la Politique de Confidentialité</a>
+    </footer>
+
+    <div id="privacy-modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="document.getElementById('privacy-modal').style.display='none'">&times;</span>
+            <h2 style="color: var(--gold); text-align: center;">POLITIQUE DE CONFIDENTIALITÉ</h2>
+            
+            <h3>1. Introduction</h3>
+            <p>La présente politique détaille l'engagement de Monsieur Ahissou Obed envers la protection des données privées de ses clients. En tant qu'assistant virtuel, la confidentialité est le socle de mon activité.</p>
+
+            <h3>2. Collecte des Informations</h3>
+            <p>Nous collectons les données suivantes uniquement dans le cadre de nos prestations :</p>
+            <ul>
+                <li>Identité (Nom, prénom)</li>
+                <li>Coordonnées professionnelles (Email, Téléphone)</li>
+                <li>Documents de travail et fichiers confiés pour traduction ou gestion.</li>
+            </ul>
+
+            <h3>3. Utilisation des Données</h3>
+            <p>Vos informations sont utilisées exclusivement pour :</p>
+            <ul>
+                <li>L'exécution des missions d'assistance et de traduction.</li>
+                <li>La communication relative aux projets en cours.</li>
+                <li>La facturation des services rendus.</li>
+            </ul>
+
+            <h3>4. Secret Professionnel & Sécurité</h3>
+            <p>Je m'engage formellement au secret professionnel. Aucune donnée, aucun document et aucune information stratégique ne sont partagés, vendus ou loués à des tiers. Les fichiers sont stockés sur des serveurs sécurisés avec authentification à deux facteurs.</p>
+
+            <h3>5. Vos Droits</h3>
+            <p>Vous disposez d'un droit d'accès, de rectification et de suppression de vos données à tout moment sur simple demande par email.</p>
+            
+            <p style="text-align: center; margin-top: 30px; font-weight: bold; color: var(--gold);">Expertise - Rigueur - Confidentialité</p>
+        </div>
     </div>
 
 </body>
